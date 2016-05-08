@@ -1,0 +1,17 @@
+每个bug都可以通过一个新的临时分支来修复，修复后，合并分支，然后将临时分支删除。
+
+git stash 把当前工作现场“储藏”起来，等以后恢复现场后继续工作；现在，用git status查看工作区，就是干净的
+
+首先确定要在哪个分支上修复bug，假定需要在master分支上修复，就从master创建临时分支
+
+git merge --no-ff -m "merged bug fix 101" issue-101
+
+git checkout dev
+
+git stash list
+git stash pop=
+		git stash apply + git stash drop
+
+
+你可以多次stash，恢复的时候，先用git stash list查看，然后恢复指定的stash，用命令：
+git stash apply stash@{0}
