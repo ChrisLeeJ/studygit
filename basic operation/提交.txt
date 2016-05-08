@@ -1,3 +1,6 @@
 git add *****
 git commit -m "***** ***** *****"
 git status
+
+查看本地库和远程库的不同：
+git diff HEAD（本地版本库） --文件名

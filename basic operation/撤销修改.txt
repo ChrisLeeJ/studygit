@@ -1,0 +1,10 @@
+没有add的修改回退：
+丢弃工作区的修改，使其与暂存区相同，如果暂存区没有则会退到和远程版本库相同：
+git checkout --file （file为文件名）
+
+已经add的修改回退：
+git reset HEAD file 可以把暂存区的修改撤销掉
+
+已经commit的参照版本回退
+
+已经push的，手动再见
