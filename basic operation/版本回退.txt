@@ -1,2 +1,6 @@
 git log 查看以往提交日志
 git log --pretty=oneline
+
+上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100
+
+git reset --hard HEAD^
