@@ -2,3 +2,12 @@
 
 git log --graph 命令可以看到分支合并图
 git log --graph --pretty=oneline --abbrev-commit
+
+
+准备合并dev分支，请注意--no-ff参数，表示禁用Fast forward：
+git merge --no-ff -m "merge with no-ff" dev
+
+在实际开发中，我们应该按照几个基本原则进行分支管理：
+1.首先，master分支应该是非常稳定的，也就是仅用来发布新版本，平时不能在上面干活；
+2.干活都在dev分支上，也就是说，dev分支是不稳定的
+3.每个人都在dev分支上干活，每个人都有自己的分支，时不时地往dev分支上合并就可以了
