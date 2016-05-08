@@ -1,0 +1,5 @@
+git remote add origin git@github.com:****/****.git
+git push -u origin master 由于远程库是空的，我们第一次推送master分支时，加上了-u参数
+git push origin master
+
+git clone克隆一个本地库
