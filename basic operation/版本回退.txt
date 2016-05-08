@@ -1,0 +1,2 @@
+git log 查看以往提交日志
+git log --pretty=oneline
