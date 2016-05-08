@@ -4,3 +4,9 @@ git log --pretty=oneline
 上一个版本就是HEAD^，上上一个版本就是HEAD^^，当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100
 
 git reset --hard HEAD^
+
+后悔：
+git reset --hard 3628164（只需要前几位）
+
+不知道commit id，查看命令历史：
+git reflog
