@@ -1,3 +1,4 @@
-it's easy
-change something
+存在冲突，必须手动解决冲突后再提交
 
+git log --graph 命令可以看到分支合并图
+git log --graph --pretty=oneline --abbrev-commit
